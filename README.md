@@ -1,14 +1,31 @@
+# Nome do Projeto
+
+## Descrição
+Uma breve descrição do seu projeto. Explique o propósito do projeto, os problemas que ele resolve e os principais recursos.
+
+## Descrição
+Este projeto é um sistema de gerenciamento de produtos e fornecedores, projetado para adicionar, editar e manipular produtos e fornecedores conforme necessário. Ele utiliza .NET MVC5 com Entity Framework para acesso a dados, FluentValidation para validação de modelos e segue uma arquitetura em três camadas (aplicação, negócios e infraestrutura) para uma separação clara de responsabilidades e escalabilidade.
+
 ## Tecnologias Utilizadas
 
 - .NET MVC5
 - C#
-- JavaScript/jQuery
-- HTML/CSS
-- Outros frameworks/bibliotecas relevantes
+- Entity Framework (ORM)
+- FluentValidation para validação de modelos
+- Repository Pattern Genérico
+- Dependency Injection (Injeção de Dependência)
+- Outras tecnologias e bibliotecas específicas
 
-## Requisitos
+## Estrutura do Projeto
 
-- .NET Framework 4.x
-- Visual Studio 2019 ou superior
-- SQL Server 
+O projeto está estruturado em três camadas principais:
 
+1. **Camada de Aplicação:** Responsável pela interação com o usuário e pela apresentação da interface.
+2. **Camada de Negócios (Business Layer):** Contém as regras de negócio e a lógica de aplicação.
+3. **Camada de Infraestrutura:** Responsável pela implementação de infraestrutura técnica, como acesso a dados e configurações.
+
+## Contato
+Informações de contato para dúvidas e suporte:
+- Nome: Seu Nome
+- Email: cleissonvasconcelos1992@hotmail.com
+- LinkedIn: [seu-perfil](https://www.linkedin.com/in/cleisson-vasconcelos/)
