@@ -1,0 +1,61 @@
+﻿@using DevIO.AppMvc.Extensions
+@model IEnumerable<DevIO.AppMvc.ViewModels.FornecedorViewModel>
+
+@{
+    ViewBag.Title = "Lista de Fornecedores";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<hr />
+
+<p>
+    <a class="btn btn-info" href="@Url.Action("Create", "Fornecedores")"> Novo Fornecedor </a>
+</p>
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Documento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ativo)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nome)
+                </td>
+                <td>
+                    @this.FormatarDocumento(item.TipoFornecedor, item.Documento)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ativo)
+                </td>
+                <td class="text-right">
+
+                    @* Ajustar a biblioteca css glyphicon para usar icons *@
+
+                    @*<a class="btn btn-warning" href="@Url.Action("Details","Fornecedores", new {id = item.Id})"><span class="glyphicon glyphicon-search"></span></a>
+                        <a class="btn btn-info" href="@Url.Action("Edit", "Fornecedores", new {id = item.Id})"><spam class="glyphicon glyphicon-pencil"></spam> </a>
+                        <a class="btn btn-danger" href="@Url.Action("Delete", "Fornecedores", new {id = item.Id})"><spam class="glyphicon glyphicon-trash"></spam> </a>*@
+
+                    <a class="btn btn-warning" href="@Url.Action("Details","Fornecedores", new { id = item.Id})">Detalhes</a>
+                    <a class="btn btn-info" href="@Url.Action("Edit", "Fornecedores", new {id = item.Id})">Editar </a>
+                    <a class="btn btn-danger" href="@Url.Action("Delete", "Fornecedores", new {id = item.Id})">Deletar</a>
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
