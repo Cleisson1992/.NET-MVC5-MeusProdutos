@@ -4,7 +4,7 @@ Meus Produtos
 ## Descrição
 Este projeto é um sistema de gerenciamento de produtos e fornecedores, projetado para adicionar, editar e manipular produtos e fornecedores conforme necessário. Ele utiliza .NET MVC5 com Entity Framework para acesso a dados, FluentValidation para validação de modelos e segue uma arquitetura em três camadas (aplicação, negócios e infraestrutura) para uma separação clara de responsabilidades e escalabilidade.
 
-## Tecnologias Utilizadas
+## Tecnologias Utilizadas e Boas Práticas
 
 - .NET MVC5
 - C#
