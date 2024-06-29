@@ -25,5 +25,5 @@ O projeto está estruturado em três camadas principais:
 ## Contato
 Informações de contato para dúvidas e suporte:
 - Nome: Cleisson Vasconcelos
-- Email: cleissonvasconcelos1992@hotmail.com
+- Email: vasconceloscleisson1992@gmail.com
 - LinkedIn: https://www.linkedin.com/in/cleisson-vasconcelos/
